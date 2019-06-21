@@ -20,7 +20,7 @@ header{
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
-    align-items: center
+    align-items: center;
     -webkit-justify-content:center;
     justify-content:center;
 }
@@ -78,7 +78,28 @@ header{
     border-right-color: #3be5ae;
     transition: height .2s .4s, width .2s .6s;
   }
-
+  
+  
+  .instagram{
+    position:absolute;
+    top:15px;
+    left:40px;
+    display:inline-block;
+    outline:none;
+    text-decoration: none;
+    text-align:center;
+    padding: .9em 3.0em;
+    float:right;
+    color:white;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    opacity:0.9;
+}
+.fa{
+    margin-right:5px;
+}
 
 
 .page-top{
@@ -131,4 +152,8 @@ header{
 .page-top:hover::before{
     transform:scale(1);
     transition:all 0.7s;
+}
+footer{
+    height:80px;
+    background: linear-gradient(rgba(34, 49, 52, 0.8),rgba(41,52,62,0.7));
 }
