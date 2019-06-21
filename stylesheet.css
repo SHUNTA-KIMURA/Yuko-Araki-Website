@@ -24,6 +24,8 @@ header{
     -webkit-justify-content:center;
     justify-content:center;
 }
+
+
 .header-right{
     float:right;
     position:absolute;
@@ -79,7 +81,7 @@ header{
 
 
 
-header h1{
+.page-top{
     color: #FF7C00;
     background: -webkit-linear-gradient(top, #FFA73D 50%, #ff921f 50%, #FF7C00 51%);
     -webkit-background-clip: text;
@@ -87,11 +89,10 @@ header h1{
     font-size:60px;
     letter-spacing: 5px;
     font-family:serif;
+    text-decoration:none;
+    display:inline-block;
 }
-header h1{
-    text-align:center;
-    
-}
+
 .top-wrapper{
     height:837px;
 }
@@ -107,4 +108,27 @@ header h1{
 }
 .main{
     height:1700px;
+}
+
+.page-top{
+    position:relative;
+    top:5px;
+    padding-top:2px;
+    outline:none;
+}
+
+.page-top::before{
+    position:absolute;
+    z-index:2;
+    top:-2px;
+    right:-2px;
+    left:-2px;
+    content:'';
+    border-top:3px solid #5bb4ff;
+    transform:scale(0,1);
+}
+
+.page-top:hover::before{
+    transform:scale(1);
+    transition:all 0.7s;
 }
