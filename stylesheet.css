@@ -88,17 +88,19 @@ header{
     outline:none;
     text-decoration: none;
     text-align:center;
-    padding: .9em 3.0em;
+    padding: .9em 2.7em;
     float:right;
     color:white;
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    opacity:0.9;
+    opacity:0.9; 
+    border-radius: 2px;
+    letter-spacing:.8px;
 }
 .fa{
-    margin-right:5px;
+    margin-right:8px;
 }
 
 
