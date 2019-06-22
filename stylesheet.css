@@ -78,12 +78,20 @@ header{
     border-right-color: #3be5ae;
     transition: height .2s .4s, width .2s .6s;
   }
-  
-  
+  .header-left{
+      padding:0;
+      position:absolute;
+      top:15px;
+      left:40px;
+  }
+
+  .logo{
+      padding:4px 0 0 0;
+      position:relative;
+      display:inline-block;
+  }
+
   .instagram{
-    position:absolute;
-    top:15px;
-    left:40px;
     display:inline-block;
     outline:none;
     text-decoration: none;
@@ -98,6 +106,23 @@ header{
     opacity:0.9; 
     border-radius: 2px;
     letter-spacing:.5px;
+}
+.logo::before{
+    z-index:2;
+    content:'';
+    border-top:3px solid  #5bb4ff;
+    position:absolute;
+    top:-3px;
+    right:-2px;
+    left:-2px;
+    transform:scale(0,1);
+    transition:all 0.6s;
+}
+.logo:hover::before{
+    transform:scale(1);
+}
+.instagram:hover{
+    opacity:1;
 }
 .fa{
     margin-right:8px;
@@ -149,11 +174,11 @@ header{
     content:'';
     border-top:3px solid #5bb4ff;
     transform:scale(0,1);
+    transition:all 0.7s;
 }
 
 .page-top:hover::before{
     transform:scale(1);
-    transition:all 0.7s;
 }
 footer{
     height:80px;
