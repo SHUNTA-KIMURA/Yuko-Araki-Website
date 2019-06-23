@@ -120,8 +120,8 @@ header{
     border-top:3px solid  #5bb4ff;
     position:absolute;
     top:-2px;
-    right:-2px;
-    left:-2px;
+    right:0px;
+    left:0px;
     transform:scale(0,1);
     transition:all 0.52s;
 }
@@ -150,6 +150,7 @@ header{
 }
 
 .top-wrapper{
+    display:-webkit-flex;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -182,8 +183,8 @@ header{
     position:absolute;
     z-index:2;
     top:-2px;
-    right:-2px;
-    left:-2px;
+    right:0px;
+    left:0px;
     content:'';
     border-top:3px solid #5bb4ff;
     transform:scale(0,1);
