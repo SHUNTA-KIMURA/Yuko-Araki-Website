@@ -144,6 +144,7 @@ header{
     color: #FF7C00;
     background: -webkit-linear-gradient(top, #FFA73D 50%, #ff921f 50%, #FF7C00 51%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size:60px;
     letter-spacing: 5px;
@@ -187,6 +188,7 @@ header{
     color: #5bb4ff;
     background: -webkit-linear-gradient(top, #1694ff 50%, #5bb4ff 50%, #00bfff 51%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size:30px;
 }
