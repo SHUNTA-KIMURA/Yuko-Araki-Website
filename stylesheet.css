@@ -9,7 +9,7 @@ html{
     height:100%;
 }
 body{
-    height:100%;
+    height:1000px;
 }
 
 /*ここからsection01*/
@@ -170,9 +170,8 @@ header{
 .top-image{
     background-image:url(yuuuuukko_top.jpg);
     background-size:cover;
-    flex: 1;
-    overflow: auto;
     opacity:0.85;
+    height:787px;
     text-align:center;
 }
 
@@ -183,7 +182,9 @@ header{
     position:absolute;
     margin:0 auto;
     top:86%;
-    z-index: 3;
+    z-index: 5;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
   }
   .scroll-1 span {
     position: absolute;
@@ -285,8 +286,11 @@ header{
     transition:all 0.7s;
 }
 footer{
-    height:80px;
-    background: linear-gradient(rgba(34, 49, 52, 0.8),rgba(41,52,62,0.7));
+    height:80px; 
+    background: linear-gradient(rgba(34, 49, 52, 0.8),rgba(9, 118, 219, 0.7));
 }
 
 /*ここからsection02*/
+#section02{
+  height:1600px;
+}
